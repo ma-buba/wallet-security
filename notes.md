@@ -34,26 +34,28 @@ check-out "wise-signer.cyfrin.io": is made to help teach people to verify transa
 
 
 
-practice:
+# practice
 
+- command
 ma_buba@DESKTOP-4JPC4VR:~/wallet-security$ cast 4byte 0x474cf53d
-# output
-depositETH(address,address,uint16) 
+- output
+depositETH(address,address,uint16)
 
+- command
 ma_buba@DESKTOP-4JPC4VR:~/wallet-security$ cast decode-calldata "depositETH(address,address,uint16)" 0x474cf53d000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb9226600000000000000000000000023618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f0000000000000000000000000000000000000000000000000000000000000000
-# output
+- output
 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
 0x23618e81E3f5cdF7f54C3d65f7FBc0aBf5B21E8f
 0
 
 
-you can use "tools.cyfrin.io" to decode it 
-click "abi-encoding" button or "safe hash calculation" if for a hardware wallet like imported on a metamask or so.
+you can use "tools.cyfrin.io" to decode it.
+click "abi-encoding" button or "safe hash calculation" if for a hardware wallet like imported on a metamask.
 
 openzepplin has this "https://safeutils.openzeppelin.com/"
 also allows you to check this safe hash to verify a transaction.
 
 and also "swiss-knife.xyz" also include with some EIP-712 hash generator 
 
-# AFTER BUYING HARDWARE WALLET, PRACTICE THIS IMMEDIATELY AND KNOW WHAT YOU'RE SIGNING
+- AFTER BUYING HARDWARE WALLET, PRACTICE THIS IMMEDIATELY AND KNOW WHAT YOU'RE SIGNING
 https://updraft.cyfrin.io/courses/advanced-web3-wallet-security/signer-advanced/verify-multi-sig-signatures
